@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.custom.sale.order,access_custom_sale_order,custom_accounting.model_sale_order,base.group_user,1,1,1,1
+access.current_company,access_current_company,custom_accounting.model_custom_accounting_current_company,base.group_user,1,1,1,1
+access.custom.print.pdf.wizard,access_custom_print_pdf_wizard,custom_accounting.model_print_pdf,base.group_user,1,1,1,1
+access.tax.report,access_tax_report,custom_accounting.model_custom_accounting_tax_report,base.group_user,1,1,1,1
+

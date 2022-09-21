@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Pie chart view -->
+    <record id="sale_order_piechart_view" model="ir.ui.view">
+        <field name="name">custom.sale.order.piechart</field>
+        <field name="model">custom.accounting.tax.report</field>
+        <field name="arch" type="xml">
+            <graph disable_linking="1" type="pie">
+                <field name="create_date" interval="week"/>
+                <field name="price_total" type="measure"/>
+            </graph>
+        </field>
+    </record>
+    <record id="action_sale_order_piechart" model="ir.actions.act_window">
+        <field name="name">Sale Orders</field>
+        <field name="res_model">custom.accounting.tax.report</field>
+        <field name="view_ids" eval="[(5, 0, 0), 
+            (0, 0, {'view_mode': 'graph', 'view_id': ref('sale_order_piechart_view')})]"/>
+        <!-- <field name="views">[(sale_order_calendar_view,calendar)]</field> -->
+    </record>
+
+    <record model="ir.ui.view" id="view_sale_order_pivot">
+        <field name="name">sale.order.pivot</field>
+        <field name="model">custom.accounting.tax.report</field>
+        <field name="arch" type="xml">
+            <pivot string="Sales Orders" sample="1">
+                <field name="create_date" type="row"/>
+                <field name="price_total" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+    <!-- Pivot view -->
+    <record id="action_sale_order_pivot" model="ir.actions.act_window">
+        <field name="name">Sale Orders Pivot</field>
+        <field name="res_model">custom.accounting.tax.report</field>
+        <field name="view_mode">pivot</field>
+        <!-- <field name="views">[(sale_order_calendar_view,calendar)]</field> -->
+    </record>
+
+    <!-- order by customer view -->
+    <record id="order_by_customer_chart_view" model="ir.ui.view">
+        <field name="name">custom.order.by.customer.chart</field>
+        <field name="model">custom.accounting.tax.report</field>
+        <field name="arch" type="xml">
+            <graph disable_linking="1" type="bar">
+                <field name="customer"/>
+                <field name="create_date" interval="month"/>
+                <field name="price_total" type="measure"/>
+            </graph>
+        </field>
+    </record>
+    <record id="action_order_by_customer_chart" model="ir.actions.act_window">
+        <field name="name">Sale Orders Bar chart</field>
+        <field name="res_model">custom.accounting.tax.report</field>
+        <field name="view_ids" eval="[(5, 0, 0), 
+            (0, 0, {'view_mode': 'graph', 'view_id': ref('order_by_customer_chart_view')})]"/>
+    </record>
+
+    <!-- Tree view -->
+    <record id="view_Total_by_Customer_tree" model="ir.ui.view">
+        <field name="name">total.by.customer.custom.tree</field>
+        <field name="model">custom.accounting.tax.report</field>
+        <field name="arch" type="xml">
+            <tree string="Orders" default_order="price_total desc" limit="5">
+                <field name="quotation" string="Order"/>
+                <field name="customer" string="Customer"/>
+                <field name="product" string="Product"/>
+                <field name="price_total" string="Total"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_sale_order_tree" model="ir.actions.act_window">
+        <field name="name">Sale Orders Tree</field>
+        <field name="res_model">custom.accounting.tax.report</field>
+        <field name="limit">5</field>
+        <field name="view_ids" eval="[(5, 0, 0), 
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('view_Total_by_Customer_tree')})]"/>
+    </record>
+
+    <!-- dashboard view -->
+    <record id="custom_dashboard_form_view" model="ir.ui.view">
+        <field name="name">Dashboard Form</field>
+        <field name="model">board.board</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <board style="1-2">
+                <column>
+                    <action string="Total per Week" name="%(action_sale_order_piechart)d"/>
+                    <action string="Sale Orders Pivot" name="%(action_sale_order_pivot)d"/>
+                </column>
+                <column>
+                    <action string="Top 5 Orders" name="%(action_sale_order_tree)d"/>
+                    <action string="Total by Customer per month" name="%(action_order_by_customer_chart)d"/>
+                </column>
+            </board>
+        </field>
+    </record>
+
+    <!-- Dashboard action -->
+    <record id="action_custom_dashboard" model="ir.actions.act_window">
+        <field name="name">Dashboard</field>
+        <field name="res_model">board.board</field>
+        <field name="view_mode">form</field>
+        <field name="usage">menu</field>
+        <field name="view_id" ref="custom_dashboard_form_view"/>
+    </record>
+
+    <menuitem id="menu_dashboard" name="Dashboard" parent="menu_custom_account_root" action="action_custom_dashboard" sequence="-1"/>
+</odoo>

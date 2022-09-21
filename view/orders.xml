@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree View -->
+    <record id="view_sale_order_custom_tree" model="ir.ui.view">
+        <field name="name">sale.order.custom.tree</field>
+        <field name="model">custom.accounting.tax.report</field>
+        <field name="arch" type="xml">
+            <tree string="Orders">
+                <field name="id" string="id"/>
+                <field name="quotation" string="Order"/>
+                <field name="move_name" string="Invoice"/>
+                <field name="create_date" string="Create Date"/>
+                <field name="customer" string="Customer"/>
+                <field name="product" string="Product"/>
+                <field name="price_subtotal" string="Subtotal"/>
+                <field name="tax_name" string="Tax"/>
+                <field name="tax" string="Tax Amount"/>
+                <field name="price_total" string="Total"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Graph view -->
+    <record model="ir.ui.view" id="view_sale_order_custom_graph">
+        <field name="name">sale.order.custom.graph</field>
+        <field name="model">custom.accounting.tax.report</field>
+        <field name="arch" type="xml">
+            <graph string="Sales Orders" sample="1">
+                <field name="quotation" type=""/>
+                <field name="price_total" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_sale_order_custom_search" model="ir.ui.view">
+        <field name="name">sale.order.custom.search</field>
+        <field name="model">custom.accounting.tax.report</field>
+        <field name="arch" type="xml">
+            <search>
+                <!-- it also search for room_id (Search View) -->
+                <field name="quotation" string="Order ID" />
+                <field name="move_name" string="Invoice ID" />
+                <field name="customer" string="Customer" />
+                <field name="tax_name" string="Tax Type" />
+
+
+                <!-- Filter View -->
+                <!-- <filter name="filter_male" string="Male" domain="[('gender', '=', 'male')]"/>
+                <filter name="filter_female" string="Female" domain="[('gender', '=', 'female')]"/>
+                <separator/>
+                <filter name="filter_kid" string="Kid" domain="[('age', '&lt;=', 10)]"/>
+                <filter name="filter_middle_age" string="Middle Age" domain="[('age', '&gt;=', 45)]"/> -->
+
+
+                <!-- <group>
+                    <filter string="Gender" name="group_by_gender" context="{'group_by':'gender'}"/>
+                </group> -->
+
+                <!-- Group by view -->
+                <filter string="Create Date" icon="terp-go-month" domain="[]" context="{'group_by':'create_date'}" name ="create_date"/>
+                <!-- Search panel -->
+                <!-- <searchpanel>
+                    <field name="state" string="Status" enable_counters="1"/>
+                    <field name="create_date"/>
+                </searchpanel> -->
+            </search>
+        </field>
+    </record>
+
+    <!-- ACTION -->
+    <record id="action_orders_list_view" model="ir.actions.act_window">
+        <field name="name">Orders</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">custom.accounting.tax.report</field>
+
+        <field name="view_ids" eval="[(5, 0, 0), 
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('view_sale_order_custom_tree')}), 
+            (0, 0, {'view_mode': 'form'})]"/>
+        <field name="search_view_id" ref="view_sale_order_custom_search"/>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new quotation, the first step of a new sale!
+            </p>
+            <p>
+                Once the quotation is confirmed, it becomes a sales order.<br/>
+                You will be able to create an invoice and collect the payment.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_details" name="Orders" parent="menu_custom_account_root" sequence="0"/>
+    <menuitem id="menu_orders_list" name="Orders" parent="menu_details" action="action_orders_list_view" sequence="0"/>
+</odoo>

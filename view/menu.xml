@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_custom_account_root" 
+        web_icon="custom_accounting,static/description/icon.png" 
+        name="BDOOP Accounting" sequence="0"/>
+</odoo>

@@ -1,0 +1,885 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* custom_accounting
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-15 12:48+0000\n"
+"PO-Revision-Date: 2022-09-15 12:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "0 <b>[24]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "0 <b>[24a]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "4.1"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "4.2"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>0</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>1</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>2</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>3</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>4</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>A</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>B</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>C</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>Chỉ tiêu</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>CÔNG TY CỔ PHẦN TS24<br/></b>5407E9BADE9D06DB9E6775F7CBA98859"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"<b>CÔNG TY TNHH VIETNAM LUXURY GOODS<br/></b>540101086914851A0BD04108F5957467"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>Giá trị hàng hóa, dịch</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>Hàng hoá, dịch vụ bán ra trong kỳ</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>Hàng hoá, dịch vụ mua vào trong kỳ</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>I</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>II</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>III </b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>IV </b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>Không phát sinh hoạt động mua, bán trong kỳ</b> (đánh dấu \"X\")"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>Kê khai thuế giá trị gia tăng phải nộp ngân sách nhà nước</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>NGƯỜI NỘP THUẾ hoặc</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>NHÂN VIÊN ĐẠI LÝ THUẾ</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>STT</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>Thuế giá trị gia tăng</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"<b>Thuế giá trị gia tăng chưa khấu trừ hết kỳ này {[41]=([36]-[22]+[37]-[38]-[39a]) ≤ 0}</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>Thuế giá trị gia tăng còn phải nộp trong kỳ ([40]=[40a]-[40b])</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>Thuế giá trị gia tăng còn được khấu trừ kỳ trước chuyển sang</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"<b>Thuế giá trị gia tăng mua vào của dự án đầu tư được bù trừ với thuế GTGT còn phải nộp của hoạt<br/>động sản xuất kinh doanh cùng kỳ tính thuế ([40b]≤[40a])</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>Thuế giá trị gia tăng nhận bàn giao được khấu trừ trong kỳ</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>Thuế giá trị gia tăng phát sinh trong kỳ ([36]=[35]-[25])</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"<b>Thuế giá trị gia tăng phải nộp của hoạt động sản xuất kinh doanh trong kỳ<br/>{[40a]=([36]-[22]+[37]-[38]-[39a]) ≥ 0}</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>TỜ KHAI THUẾ GIÁ TRỊ GIA TĂNG</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>V</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>VI </b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"<b>[01a]</b> Tên hoạt động sản xuất kinh doanh: Hoạt động sản xuất kinh doanh thông thường"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[01b]</b> Kỳ tính thuế: Quý 1 năm 2022"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[02]</b> Lần đầu [ X ]"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[03]</b> Bổ sung lần thứ [   ]"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[04] Tên người nộp thuế: CÔNG TY TNHH VIETNAM LUXURY GOODS</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[05]</b> Mã số thuế:"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[06] Tên đại lý thuế (nếu có):</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[07]</b> Mã số thuế:"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[08]</b> Hợp đồng đại lý thuế: Số:"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"<b>[09]</b> Tên đơn vị phụ thuộc/địa điểm kinh doanh của hoạt động sản xuất kinh doanh khác tỉnh nơi đóng trụ sở chính:"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[10]</b> Mã số thuế đơn vị phụ thuộc/Mã số địa điểm kinh doanh:"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"<b>[11]</b> Địa chỉ nơi có hoạt động sản xuất kinh doanh khác tỉnh nơi đóng trụ sở chính:"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[11a]</b> Phường/Xã:"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[11b]</b> Quận/Huyện:"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[11c]</b> Tỉnh/Thành phố:"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[21]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[22]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[23]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[23a]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[25]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[26]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[27]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[28]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[29]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[30]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[31]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[32]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[32a]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[33]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[34]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[35]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[36]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[37]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[38]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[39a]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[40]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[40a]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[40b]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[41]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[42]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>[43]</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>gia tăng)</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>vụ (chưa có thuế giá trị</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<b>ĐẠI DIỆN HỢP PHÁP CỦA NGƯỜI NỘP THUẾ</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<i>(Ban hành kèm theo Thông tư</i>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<i>(Ký, ghi rõ họ tên; chức vụ và đóng dấu (nếu có)/Ký điện tử)</i>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"<i>(Áp dụng đối với người nộp thuế tính thuế theo phương pháp khấu trừ có hoạt động sản xuất kinh doanh)</i>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"<i>2. Chỉ tiêu [09], [10], [11]: Khai thông tin của đơn vị phụ thuộc, địa điểm kinh doanh đóng tại địa phương khác tỉnh nơi đóng trụ sở<br/>chính đối với các trường hợp quy định tại điểm b, c khoản 1 Điều 11 Nghị định số 126/2020/NĐ-"
+"CP ngày 19/10/2020 của Chính<br/>phủ. Trường hợp có nhiều đơn vị phụ thuộc, địa điểm kinh doanh đóng trên nhiều huyện do Cục Thuế quản lý thì chọn 1 đơn vị đại<br/>diện để kê khai vào chỉ tiêu này. Trường hợp có nhiều đơn vị phụ thuộc, địa điểm kinh doanh đóng trên nhiều huyện do Chi cục Thuế<br/>khu vực quản lý thì chọn 1 đơn vị đại diện cho huyện do Chi cục Thuế khu vực quản lý để kê khai vào chỉ tiêu này.<br/>3. Chỉ tiêu [32a]: Khai giá trị hàng hóa, dịch vụ thuộc trường hợp không phải kê khai, tính nộp thuế giá trị gia tăng theo quy định<br/>của pháp luật thuế giá trị gia tăng. 4. Chỉ tiêu [37] và [38]: Khai theo số thuế được khấu trừ điều chỉnh tăng/giảm tại chỉ tiêu II<br/>trên Tờ khai bổ sung. Riêng trường hợp cơ quan thuế, cơ quan có thẩm quyền đã ban hành kết luận, quyết định xử lý về thuế có điều<br/>chỉnh tương ứng các kỳ tính thuế trước thì khai vào hồ sơ khai thuế của kỳ tính thuế nhận được kết luận, quyết định xử lý về thuế<br/>(không phải khai bổ sung hồ sơ khai thuế).<br/>5. Chỉ tiêu [39a]: Khai số thuế GTGT còn được khấu trừ chưa đề nghị hoàn của dự án đầu tư chuyển cho người nộp thuế tiếp tục<br/>khấu trừ (là số thuế GTGT còn được khấu trừ, không đủ điều kiện hoàn, không hoàn mà người nộp thuế đã kê khai riêng tờ khai<br/>thuế dự án đầu tư) khi dự án đầu tư đi vào hoạt động hoặc số thuế GTGT còn được khấu trừ chưa đề nghị hoàn của hoạt động sản<br/>xuất kinh doanh của đơn vị phụ thuộc khi chấm dứt hoạt động,…<br/>6. Chỉ tiêu [40b]: Khai tổng số thuế đã khai tại chỉ tiêu [28a] và [28b] của các Tờ khai mẫu số 02/GTGT./.</i>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<i>29/09/2021 của Bộ Tài Chính)</i>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"<i><b>Ghi chú:<br/></b>1. Chỉ tiêu [01a]: Người nộp thuế lựa chọn một trong các hoạt động sau:</i>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<i>số 80/2021/TT-BTC ngày</i>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"<i> - Hoạt động sản xuất kinh doanh thông thường<br/> - Hoạt động xổ số kiến thiết, xổ số điện toán<br/> - Hoạt động thăm dò khai thác dầu khí<br/> - Dự án đầu tư cơ sở hạ tầng, nhà để chuyển nhượng khác địa bàn tỉnh nơi đóng trụ sở chính<br/> - Nhà máy sản xuất điện khác địa bàn tỉnh nơi đóng trụ sở chính.</i>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<i>Đơn vị tiền: Đồng Việt Nam</i>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "<i>Độc lập - Tự do - Hạnh phúc</i>"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.ui.menu,name:custom_accounting.menu_custom_account_root
+msgid "BDOOP Accounting"
+msgstr "Kế toán BDOOP"
+
+#. module: custom_accounting
+#: model:ir.actions.act_window,name:custom_accounting.action_sale_order_calendar
+#: model:ir.ui.menu,name:custom_accounting.menu_calendar_list
+msgid "Calendar"
+msgstr "Lịch"
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.print_pdf_form
+msgid "Cancel"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_custom_accounting_tax_report__create_date
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_search
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_tree
+msgid "Create Date"
+msgstr "Ngày tạo"
+
+#. module: custom_accounting
+#: model_terms:ir.actions.act_window,help:custom_accounting.action_orders_list_view
+msgid "Create a new quotation, the first step of a new sale!"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_print_pdf__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_print_pdf__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_custom_accounting_tax_report__customer
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_Total_by_Customer_tree
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_search
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_tree
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: custom_accounting
+#: model:ir.actions.act_window,name:custom_accounting.action_custom_dashboard
+#: model:ir.ui.menu,name:custom_accounting.menu_dashboard
+msgid "Dashboard"
+msgstr "Bảng thông tin"
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_custom_accounting_tax_report__display_name
+#: model:ir.model.fields,field_description:custom_accounting.field_print_pdf__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_print_pdf__end_date
+msgid "End Date"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Giá trị và thuế giá trị gia tăng của hàng hóa, dịch vụ mua vào"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Hàng hoá, dịch vụ bán ra chịu thuế suất 0%"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Hàng hoá, dịch vụ bán ra chịu thuế suất 10%"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Hàng hoá, dịch vụ bán ra chịu thuế suất 5%"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Hàng hoá, dịch vụ bán ra không tính thuế"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"Hàng hóa, dịch vụ bán ra chịu thuế giá trị gia tăng<br/>([27]=[29]+[30]+[32]+[32a]; [28]=[31]+[33])"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Hàng hóa, dịch vụ bán ra không chịu thuế giá trị gia tăng"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Họ và tên:<br/>Chứng chỉ hành nghề số:"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_custom_accounting_tax_report__id
+#: model:ir.model.fields,field_description:custom_accounting.field_print_pdf__id
+msgid "ID"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_custom_accounting_tax_report__move_name
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_tree
+msgid "Invoice"
+msgstr "Hóa đơn"
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_search
+msgid "Invoice ID"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_custom_accounting_tax_report____last_update
+#: model:ir.model.fields,field_description:custom_accounting.field_print_pdf____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_print_pdf__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_print_pdf__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Mẫu số: <b>01/GTGT</b>"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Ngày:"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.actions.act_window,help:custom_accounting.action_orders_list_view
+msgid ""
+"Once the quotation is confirmed, it becomes a sales order.<br>\n"
+"                You will be able to create an invoice and collect the payment."
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_Total_by_Customer_tree
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_tree
+msgid "Order"
+msgstr "Đơn hàng"
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_search
+msgid "Order ID"
+msgstr "ID đơn hàng"
+
+#. module: custom_accounting
+#: model:ir.actions.act_window,name:custom_accounting.action_orders_list_view
+#: model:ir.ui.menu,name:custom_accounting.menu_details
+#: model:ir.ui.menu,name:custom_accounting.menu_orders_list
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_Total_by_Customer_tree
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_tree
+msgid "Orders"
+msgstr "Đơn hàng"
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_custom_accounting_tax_report__price_subtotal
+msgid "Price Subtotal"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_custom_accounting_tax_report__price_total
+msgid "Price Total"
+msgstr "Tổng giá"
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.print_pdf_form
+msgid "Print"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.actions.act_window,name:custom_accounting.action_print_pdf_wizard
+#: model:ir.ui.menu,name:custom_accounting.menu_print_pdf_button
+#: model_terms:ir.ui.view,arch_db:custom_accounting.print_pdf_form
+msgid "Print PDF"
+msgstr "In file PDF"
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_custom_accounting_tax_report__product
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_Total_by_Customer_tree
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_tree
+msgid "Product"
+msgstr "Mặt hàng"
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_custom_accounting_tax_report__quotation
+msgid "Quotation"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model,name:custom_accounting.model_custom_accounting_tax_report
+msgid "Sale Order Line joined with Sale and some other tables view"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.actions.report,name:custom_accounting.action_custom_report_sale_order
+msgid "Sale Order Report"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.actions.act_window,name:custom_accounting.action_sale_order_piechart
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_calendar
+msgid "Sale Orders"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.actions.act_window,name:custom_accounting.action_order_by_customer_chart
+msgid "Sale Orders Bar chart"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.actions.act_window,name:custom_accounting.action_sale_order_pivot
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_dashboard_form_view
+msgid "Sale Orders Pivot"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.actions.act_window,name:custom_accounting.action_sale_order_tree
+msgid "Sale Orders Tree"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_graph
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_pivot
+msgid "Sales Orders"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_print_pdf__start_date
+msgid "Start Date"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_tree
+msgid "Subtotal"
+msgstr "Tổng giá chưa tính thuế"
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_custom_accounting_tax_report__tax
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_tree
+msgid "Tax"
+msgstr "Loại thuế"
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_tree
+msgid "Tax Amount"
+msgstr "Thuế"
+
+#. module: custom_accounting
+#: model:ir.model.fields,field_description:custom_accounting.field_custom_accounting_tax_report__tax_name
+msgid "Tax Name"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_search
+msgid "Tax Type"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Thuế giá trị gia tăng còn được khấu trừ chuyển kỳ sau ([43]=[41]-[42])"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"Thuế giá trị gia tăng của hàng hóa, dịch vụ mua vào được khấu trừ kỳ này"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Thuế giá trị gia tăng đề nghị hoàn ([42] ≤ [41])"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_dashboard_form_view
+msgid "Top 5 Orders"
+msgstr "Top 5 đơn hàng"
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_Total_by_Customer_tree
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_tree
+msgid "Total"
+msgstr "Tổng giá"
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_dashboard_form_view
+msgid "Total by Customer per month"
+msgstr "Tổng giá / khách hàng mối tháng"
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_dashboard_form_view
+msgid "Total per Week"
+msgstr "Tổng mỗi tuần"
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Tp. Hồ Chí Minh, ngày"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Trong đó: hàng hóa, dịch vụ nhập khẩu"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"Tôi cam đoan số liệu khai trên là đúng và chịu trách nhiệm trước pháp luật về số liệu đã khai./."
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Tôn Thất Duyến"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"Tổng doanh thu và thuế giá trị gia tăng của hàng hóa, dịch vụ bán ra<br/>([34]=[26]+[27]; [35]=[28])"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Xác định nghĩa vụ thuế giá trị gia tăng phải nộp trong kỳ:"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "background image"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.view_sale_order_custom_tree
+msgid "id"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "năm"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model,name:custom_accounting.model_print_pdf
+msgid "print.pdf"
+msgstr ""
+
+#. module: custom_accounting
+#: model:ir.model,name:custom_accounting.model_sale_order
+msgid "sale order"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "tháng"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Điều chỉnh giảm"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid "Điều chỉnh tăng"
+msgstr ""
+
+#. module: custom_accounting
+#: model_terms:ir.ui.view,arch_db:custom_accounting.custom_report_sale_order
+msgid ""
+"Điều chỉnh tăng, giảm thuế giá trị gia tăng còn được khấu trừ của các kỳ trước"
+msgstr ""

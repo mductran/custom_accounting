@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Wizard view -->
+    <record id="print_pdf_form" model="ir.ui.view">
+        <field name="name">print.PDF.wizard</field>
+        <field name="model">print.pdf</field>
+        <field name="arch" type="xml">
+            <form string="Print PDF">
+                <group>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                </group>
+
+                <footer>
+                    <button name="print_pdf_bt" string="Print" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- wizard action -->
+    <record id="action_print_pdf_wizard" model="ir.actions.act_window">
+        <field name="name">Print PDF</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">print.pdf</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="print_pdf_form"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_print_pdf_button" name="Print PDF" parent="menu_custom_account_root" action="action_print_pdf_wizard" sequence="2"/>
+</odoo>

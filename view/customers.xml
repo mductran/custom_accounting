@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree View -->
+    <!-- <record id="view_customer_custom_tree" model="ir.ui.view">
+    <field name="name">customer.custom.tree</field>
+    <field name="model">res.partner</field>
+    <field name="arch" type="xml">
+        <tree string="Customers" default_order="name">
+            <field name="name" string="Name"/>
+            <field name="email" string="Email"/>
+            <field name="phone" string="Phone"/>
+            <field name="sale_order_count" string="No. of Orders" sum="Total sale orders"/>
+        </tree>
+    </field>
+</record> -->
+
+    <!-- Search View -->
+    <!-- <record id="view_customer_custom_search" model="ir.ui.view">
+    <field name="name">sale.order.custom.search</field>
+    <field name="model">res.partner</field>
+    <field name="arch" type="xml">
+        <search> -->
+    <!-- it also search for room_id (Search View) -->
+    <!-- <field name="name" string="Customer name" />
+            <field name="email" string="Customer email" />
+            <field name="phone" string="Customer phone" /> -->
+    <!-- <field name="partner_id" string="Customer" />
+                <field name="user_id" string="Sale person" /> -->
+    <!-- <filter name="filter_count" string="Count" domain="[('sale_order_count', '!=', 0)]"/> -->
+    <!-- Filter View -->
+    <!-- <filter name="filter_male" string="Male" domain="[('gender', '=', 'male')]"/>
+                <filter name="filter_female" string="Female" domain="[('gender', '=', 'female')]"/>
+                <separator/>
+                <filter name="filter_kid" string="Kid" domain="[('age', '&lt;=', 10)]"/>
+                <filter name="filter_middle_age" string="Middle Age" domain="[('age', '&gt;=', 45)]"/> -->
+
+
+    <!-- <group>
+                    <filter string="Gender" name="group_by_gender" context="{'group_by':'gender'}"/>
+                </group> -->
+
+    <!-- Group by view -->
+    <!-- <filter string="Create Date" icon="terp-go-month" domain="[]" context="{'group_by':'create_date'}" name ="create_date"/> -->
+    <!-- Search panel -->
+    <!-- <searchpanel>
+                    <field name="state" string="Status" enable_counters="1"/>
+                </searchpanel> -->
+    <!-- </search>
+    </field>
+</record> -->
+
+    <!-- ACTION -->
+    <!-- <record id="action_customers_list_view" model="ir.actions.act_window">
+    <field name="name">Custom Customers</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">res.partner</field>
+    <field name="limit">30</field>
+    <field name="view_ids" eval="[(5, 0, 0), 
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('view_customer_custom_tree')}), 
+            (0, 0, {'view_mode': 'form'})]"/>
+    <field name="search_view_id" ref="view_customer_custom_search"/>
+    <field name="context">{}</field>
+    <field name="domain">[('sale_order_count', '!=', 0)]</field>
+    <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+                Create a new customer!
+        </p>
+    </field>
+</record>
+
+<menuitem id="menu_customer_list" name="Customers" parent="menu_details" action="action_customers_list_view" sequence="1"/> -->
+</odoo>

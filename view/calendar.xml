@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Calendar -->
+    <record model="ir.ui.view" id="view_sale_order_calendar">
+        <field name="name">sale.order.custom.calendar</field>
+        <field name="model">custom.accounting.tax.report</field>
+        <field name="arch" type="xml">
+            <calendar string="Sale Orders" mode="month" date_start="create_date" color="customer" quick_add="False" event_limit="5">
+                <field name="quotation" />
+                <field name="customer" filters="1"/>
+                <field name="price_total" />
+            </calendar>
+        </field>
+    </record>
+
+    <!-- ACTION -->
+    <record id="action_sale_order_calendar" model="ir.actions.act_window">
+        <field name="name">Calendar</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">custom.accounting.tax.report</field>
+        <!-- <field name="view_mode">calendar</field> -->
+        <field name="view_ids" eval="[(5, 0, 0), 
+            (0, 0, {'view_mode': 'calendar', 'view_id': ref('view_sale_order_calendar')})]"/>
+        <field name="search_view_id" ref="view_sale_order_custom_search"/>
+        <field name="context">{}</field>
+    </record>
+
+    <menuitem id="menu_calendar_list" name="Calendar" parent="menu_custom_account_root" action="action_sale_order_calendar" sequence="1"/>
+</odoo>

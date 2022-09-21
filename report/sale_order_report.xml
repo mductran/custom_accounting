@@ -1,0 +1,478 @@
+<odoo>
+	<template id="custom_report_sale_order">
+		<t t-call="web.basic_layout">
+			<html>
+
+				<head>
+					<title></title>
+				
+					<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+					<br />
+					<style type="text/css">
+						p {
+							margin: 0;
+							padding: 0;
+						}
+				
+						.ft10 {
+							font-size: 13px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft11 {
+							font-size: 13px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft12 {
+							font-size: 13px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft13 {
+							font-size: 11px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft14 {
+							font-size: 12px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft15 {
+							font-size: 11px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft16 {
+							font-size: 18px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft17 {
+							font-size: 11px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft18 {
+							font-size: 11px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft19 {
+							font-size: 11px;
+							line-height: 19px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						p {
+							margin: 0;
+							padding: 0;
+						}
+				
+						.ft20 {
+							font-size: 11px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft21 {
+							font-size: 11px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft22 {
+							font-size: 13px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft23 {
+							font-size: 13px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft24 {
+							font-size: 13px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft25 {
+							font-size: 12px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft26 {
+							font-size: 12px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft27 {
+							font-size: 11px;
+							line-height: 16px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft28 {
+							font-size: 13px;
+							line-height: 18px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft29 {
+							font-size: 11px;
+							line-height: 19px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft210 {
+							font-size: 12px;
+							line-height: 14px;
+							font-family: Times;
+							color: #000000;
+						}
+				
+						.ft211 {
+							font-size: 12px;
+							line-height: 18px;
+							font-family: Times;
+							color: #000000;
+						}
+					</style>
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+				</head>
+				
+				<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+					<div id="page1-div" style="position:relative;width:918px;height:1188px;">
+						<img width="918" height="1188" src="custom_accounting/static/src/img/target001.png" alt="background image" />
+						<p style="position:absolute;top:82px;left:295px;white-space:nowrap" class="ft10">
+							<b>CỘNG&#160;HÒA&#160;XÃ&#160;HỘI&#160;CHỦ&#160;NGHĨA&#160;VIỆT&#160;NAM</b>
+						</p>
+						<p style="position:absolute;top:101px;left:367px;white-space:nowrap" class="ft11">
+							<i>Độc&#160;lập&#160;-&#160;Tự&#160;do&#160;-&#160;Hạnh&#160;phúc</i>
+						</p>
+						<p style="position:absolute;top:123px;left:393px;white-space:nowrap" class="ft12">-------------------------</p>
+						<p style="position:absolute;top:75px;left:697px;white-space:nowrap" class="ft13">
+							Mẫu&#160;số:&#160;<b>01/GTGT</b></p>
+						<p style="position:absolute;top:93px;left:666px;white-space:nowrap" class="ft15">
+							<i>(Ban&#160;hành&#160;kèm&#160;theo&#160;Thông&#160;tư</i>
+						</p>
+						<p style="position:absolute;top:111px;left:679px;white-space:nowrap" class="ft15">
+							<i>số&#160;80/2021/TT-BTC&#160;ngày</i>
+						</p>
+						<p style="position:absolute;top:129px;left:663px;white-space:nowrap" class="ft15">
+							<i>29/09/2021&#160;của&#160;Bộ&#160;Tài&#160;Chính)</i>
+						</p>
+						<p style="position:absolute;top:158px;left:288px;white-space:nowrap" class="ft16">
+							<b>TỜ&#160;KHAI&#160;THUẾ&#160;GIÁ&#160;TRỊ&#160;GIA&#160;TĂNG</b>
+						</p>
+						<p style="position:absolute;top:182px;left:127px;white-space:nowrap" class="ft11">
+							<i>(Áp&#160;dụng&#160;đối&#160;với&#160;người&#160;nộp&#160;thuế&#160;tính&#160;thuế&#160;theo&#160;phương&#160;pháp&#160;khấu&#160;trừ&#160;có&#160;hoạt&#160;động&#160;sản&#160;xuất&#160;kinh&#160;doanh)</i>
+						</p>
+						<p style="position:absolute;top:211px;left:183px;white-space:nowrap" class="ft10">
+							<b>[01a]</b>&#160;Tên&#160;hoạt&#160;động&#160;sản&#160;xuất&#160;kinh&#160;doanh:&#160;Hoạt&#160;động&#160;sản&#160;xuất&#160;kinh&#160;doanh&#160;thông&#160;thường
+						</p>
+						<p style="position:absolute;top:236px;left:343px;white-space:nowrap" class="ft10">
+							<b>[01b]</b>&#160;Kỳ&#160;tính&#160;thuế:&#160;Quý&#160;<span t-esc="report_quarter"/>&#160;năm&#160;<span t-esc="report_year"/>
+						</p>
+						<p style="position:absolute;top:262px;left:299px;white-space:nowrap" class="ft10">
+							<b>[02]</b>&#160;Lần&#160;đầu&#160;[&#160;X&#160;]&#160;
+						</p>
+						<p style="position:absolute;top:262px;left:456px;white-space:nowrap" class="ft10">
+							<b>[03]</b>&#160;Bổ&#160;sung&#160;lần&#160;thứ&#160;[&#160;&#160;&#160;]
+						</p>
+						<p style="position:absolute;top:310px;left:70px;white-space:nowrap" class="ft10">
+							<b>[04]&#160;Tên&#160;người&#160;nộp&#160;thuế:&#160;<span t-esc="company_name"/></b>
+						</p>
+						<p style="position:absolute;top:339px;left:70px;white-space:nowrap" class="ft10">
+							<b>[05]</b>&#160;Mã&#160;số&#160;thuế:&#160;
+						</p>
+						<p style="position:absolute;top:341px;left:250px;white-space:nowrap" class="ft12"><span t-esc="tax_code_0"/></p>
+						<p style="position:absolute;top:341px;left:277px;white-space:nowrap" class="ft12"><span t-esc="tax_code_1"/></p>
+						<p style="position:absolute;top:341px;left:305px;white-space:nowrap" class="ft12"><span t-esc="tax_code_2"/></p>
+						<p style="position:absolute;top:341px;left:332px;white-space:nowrap" class="ft12"><span t-esc="tax_code_3"/></p>
+						<p style="position:absolute;top:341px;left:359px;white-space:nowrap" class="ft12"><span t-esc="tax_code_4"/></p>
+						<p style="position:absolute;top:341px;left:387px;white-space:nowrap" class="ft12"><span t-esc="tax_code_5"/></p>
+						<p style="position:absolute;top:341px;left:414px;white-space:nowrap" class="ft12"><span t-esc="tax_code_6"/></p>
+						<p style="position:absolute;top:341px;left:442px;white-space:nowrap" class="ft12"><span t-esc="tax_code_7"/></p>
+						<p style="position:absolute;top:341px;left:469px;white-space:nowrap" class="ft12"><span t-esc="tax_code_8"/></p>
+						<p style="position:absolute;top:341px;left:496px;white-space:nowrap" class="ft12"><span t-esc="tax_code_9"/></p>
+						<p style="position:absolute;top:339px;left:519px;white-space:nowrap" class="ft12">-</p>
+						<p style="position:absolute;top:391px;left:70px;white-space:nowrap" class="ft10">
+							<b>[06]&#160;Tên&#160;đại&#160;lý&#160;thuế&#160;(nếu&#160;có):</b>
+						</p>
+						<p style="position:absolute;top:421px;left:70px;white-space:nowrap" class="ft10">
+							<b>[07]</b>&#160;Mã&#160;số&#160;thuế:&#160;
+						</p>
+						<p style="position:absolute;top:421px;left:519px;white-space:nowrap" class="ft12">-</p>
+						<p style="position:absolute;top:451px;left:70px;white-space:nowrap" class="ft10">
+							<b>[08]</b>&#160;Hợp&#160;đồng&#160;đại&#160;lý&#160;thuế:&#160;Số:
+						</p>
+						<p style="position:absolute;top:448px;left:461px;white-space:nowrap" class="ft12">Ngày:&#160;&#160;</p>
+						<p style="position:absolute;top:476px;left:70px;white-space:nowrap" class="ft10">
+							<b>[09]</b>&#160;Tên&#160;đơn&#160;vị&#160;phụ&#160;thuộc/địa&#160;điểm&#160;kinh&#160;doanh&#160;của&#160;hoạt&#160;động&#160;sản&#160;xuất&#160;kinh&#160;doanh&#160;khác&#160;tỉnh&#160;nơi&#160;đóng&#160;trụ&#160;sở&#160;chính:
+						</p>
+						<p style="position:absolute;top:502px;left:70px;white-space:nowrap" class="ft10">
+							<b>[10]</b>&#160;Mã&#160;số&#160;thuế&#160;đơn&#160;vị&#160;phụ&#160;thuộc/Mã&#160;số&#160;địa&#160;điểm&#160;kinh&#160;doanh:
+						</p>
+						<p style="position:absolute;top:528px;left:70px;white-space:nowrap" class="ft10">
+							<b>[11]</b>&#160;Địa&#160;chỉ&#160;nơi&#160;có&#160;hoạt&#160;động&#160;sản&#160;xuất&#160;kinh&#160;doanh&#160;khác&#160;tỉnh&#160;nơi&#160;đóng&#160;trụ&#160;sở&#160;chính:
+						</p>
+						<p style="position:absolute;top:553px;left:70px;white-space:nowrap" class="ft10"><b>[11a]</b>&#160;Phường/Xã:
+						</p>
+						<p style="position:absolute;top:553px;left:328px;white-space:nowrap" class="ft10"><b>[11b]</b>&#160;Quận/Huyện:
+						</p>
+						<p style="position:absolute;top:553px;left:594px;white-space:nowrap" class="ft10">
+							<b>[11c]</b>&#160;Tỉnh/Thành&#160;phố:
+						</p>
+						<p style="position:absolute;top:575px;left:672px;white-space:nowrap" class="ft11">
+							<i>Đơn&#160;vị&#160;tiền:&#160;Đồng&#160;Việt&#160;Nam</i>
+						</p>
+						<p style="position:absolute;top:619px;left:75px;white-space:nowrap" class="ft17"><b>STT</b></p>
+						<p style="position:absolute;top:619px;left:307px;white-space:nowrap" class="ft17"><b>Chỉ&#160;tiêu</b></p>
+						<p style="position:absolute;top:602px;left:564px;white-space:nowrap" class="ft17">
+							<b>Giá&#160;trị&#160;hàng&#160;hóa,&#160;dịch</b>
+						</p>
+						<p style="position:absolute;top:619px;left:560px;white-space:nowrap" class="ft17">
+							<b>vụ&#160;(chưa&#160;có&#160;thuế&#160;giá&#160;trị</b>
+						</p>
+						<p style="position:absolute;top:635px;left:602px;white-space:nowrap" class="ft17"><b>gia&#160;tăng)</b></p>
+						<p style="position:absolute;top:619px;left:717px;white-space:nowrap" class="ft17">
+							<b>Thuế&#160;giá&#160;trị&#160;gia&#160;tăng</b>
+						</p>
+						<p style="position:absolute;top:660px;left:83px;white-space:nowrap" class="ft17"><b>A</b></p>
+						<p style="position:absolute;top:660px;left:108px;white-space:nowrap" class="ft17">
+							<b>Không&#160;phát&#160;sinh&#160;hoạt&#160;động&#160;mua,&#160;bán&#160;trong&#160;kỳ</b>&#160;(đánh&#160;dấu&#160;&#39;x&#39;)
+						</p>
+						<p style="position:absolute;top:662px;left:483px;white-space:nowrap" class="ft17"><b>[21]</b></p>
+						<p style="position:absolute;top:662px;left:523px;white-space:nowrap" class="ft17"><b><span t-esc="field_21"/></b></p>
+						<p style="position:absolute;top:684px;left:83px;white-space:nowrap" class="ft17"><b>B</b></p>
+						<p style="position:absolute;top:684px;left:110px;white-space:nowrap" class="ft17">
+							<b>Thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;còn&#160;được&#160;khấu&#160;trừ&#160;kỳ&#160;trước&#160;chuyển&#160;sang</b>
+						</p>
+						<p style="position:absolute;top:684px;left:710px;white-space:nowrap" class="ft17"><b>[22]</b></p>
+						<p style="position:absolute;top:684px;left:840px;white-space:nowrap" class="ft17"><b><span t-esc="field_22"/></b></p>
+						<p style="position:absolute;top:708px;left:83px;white-space:nowrap" class="ft17"><b>C</b></p>
+						<p style="position:absolute;top:708px;left:110px;white-space:nowrap" class="ft17">
+							<b>Kê&#160;khai&#160;thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;phải&#160;nộp&#160;ngân&#160;sách&#160;nhà&#160;nước</b>
+						</p>
+						<p style="position:absolute;top:733px;left:85px;white-space:nowrap" class="ft17"><b>I</b></p>
+						<p style="position:absolute;top:733px;left:110px;white-space:nowrap" class="ft17">
+							<b>Hàng&#160;hoá,&#160;dịch&#160;vụ&#160;mua&#160;vào&#160;trong&#160;kỳ</b>
+						</p>
+						<p style="position:absolute;top:760px;left:84px;white-space:nowrap" class="ft17"><b>1</b></p>
+						<p style="position:absolute;top:757px;left:110px;white-space:nowrap" class="ft18">
+							Giá&#160;trị&#160;và&#160;thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;của&#160;hàng&#160;hóa,&#160;dịch&#160;vụ&#160;mua&#160;vào
+						</p>
+						<p style="position:absolute;top:760px;left:561px;white-space:nowrap" class="ft17"><b>[23]</b></p>
+						<p style="position:absolute;top:760px;left:692px;white-space:nowrap" class="ft18">0&#160;<b>[24]</b></p>
+						<p style="position:absolute;top:760px;left:840px;white-space:nowrap" class="ft18">0</p>
+						<p style="position:absolute;top:781px;left:110px;white-space:nowrap" class="ft18">
+							Trong&#160;đó:&#160;hàng&#160;hóa,&#160;dịch&#160;vụ&#160;nhập&#160;khẩu</p>
+						<p style="position:absolute;top:784px;left:558px;white-space:nowrap" class="ft17"><b>[23a]</b></p>
+						<p style="position:absolute;top:784px;left:692px;white-space:nowrap" class="ft18">0&#160;<b>[24a]</b></p>
+						<p style="position:absolute;top:784px;left:840px;white-space:nowrap" class="ft18">0</p>
+						<p style="position:absolute;top:809px;left:84px;white-space:nowrap" class="ft17"><b>2</b></p>
+						<p style="position:absolute;top:806px;left:110px;white-space:nowrap" class="ft18">
+							Thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;của&#160;hàng&#160;hóa,&#160;dịch&#160;vụ&#160;mua&#160;vào&#160;được&#160;khấu&#160;trừ&#160;kỳ&#160;này
+						</p>
+						<p style="position:absolute;top:809px;left:710px;white-space:nowrap" class="ft17"><b>[25]</b></p>
+						<p style="position:absolute;top:809px;left:840px;white-space:nowrap" class="ft18">0</p>
+						<p style="position:absolute;top:830px;left:82px;white-space:nowrap" class="ft17"><b>II</b></p>
+						<p style="position:absolute;top:830px;left:110px;white-space:nowrap" class="ft17">
+							<b>Hàng&#160;hoá,&#160;dịch&#160;vụ&#160;bán&#160;ra&#160;trong&#160;kỳ</b>
+						</p>
+						<p style="position:absolute;top:857px;left:84px;white-space:nowrap" class="ft17"><b>1</b></p>
+						<p style="position:absolute;top:855px;left:110px;white-space:nowrap" class="ft18">
+							Hàng&#160;hóa,&#160;dịch&#160;vụ&#160;bán&#160;ra&#160;không&#160;chịu&#160;thuế&#160;giá&#160;trị&#160;gia&#160;tăng
+						</p>
+						<p style="position:absolute;top:857px;left:561px;white-space:nowrap" class="ft17"><b>[26]</b></p>
+						<p style="position:absolute;top:857px;left:602px;white-space:nowrap" class="ft18"><span t-esc="'{0:,.2f}'.format(field_26)"/></p>
+						<p style="position:absolute;top:890px;left:84px;white-space:nowrap" class="ft17"><b>2</b></p>
+						<p style="position:absolute;top:879px;left:110px;white-space:nowrap" class="ft19">
+							Hàng&#160;hóa,&#160;dịch&#160;vụ&#160;bán&#160;ra&#160;chịu&#160;thuế&#160;giá&#160;trị&#160;gia&#160;tăng<br />([27]=[29]+[30]+[32]+[32a];&#160;[28]=[31]+[33])
+						</p>
+						<p style="position:absolute;top:890px;left:561px;white-space:nowrap" class="ft17"><b>[27]</b></p>
+						<p style="position:absolute;top:890px;left:602px;white-space:nowrap" class="ft18"><span t-esc="'{0:,.2f}'.format(field_27)"/></p>
+						<p style="position:absolute;top:890px;left:712px;white-space:nowrap" class="ft18"><b>[28]</b></p>
+						<p style="position:absolute;top:890px;left:750px;white-space:nowrap" class="ft18"><span t-esc="'{0:,.2f}'.format(field_28)"/></p>
+						<p style="position:absolute;top:920px;left:85px;white-space:nowrap" class="ft18">a</p>
+						<p style="position:absolute;top:920px;left:110px;white-space:nowrap" class="ft18">
+							Hàng&#160;hoá,&#160;dịch&#160;vụ&#160;bán&#160;ra&#160;chịu&#160;thuế&#160;suất&#160;0%</p>
+						<p style="position:absolute;top:923px;left:561px;white-space:nowrap" class="ft17"><b>[29]</b></p>
+						<p style="position:absolute;top:923px;left:602px;white-space:nowrap" class="ft18"><span t-esc="'{0:,.2f}'.format(field_29)"/></p>
+						<p style="position:absolute;top:944px;left:84px;white-space:nowrap" class="ft18">b</p>
+						<p style="position:absolute;top:944px;left:110px;white-space:nowrap" class="ft18">
+							Hàng&#160;hoá,&#160;dịch&#160;vụ&#160;bán&#160;ra&#160;chịu&#160;thuế&#160;suất&#160;5%</p>
+						<p style="position:absolute;top:947px;left:561px;white-space:nowrap" class="ft17"><b>[30]</b></p>
+						<p style="position:absolute;top:947px;left:602px;white-space:nowrap" class="ft18"><span t-esc="'{0:,.2f}'.format(field_30)"/></p>
+						<p style="position:absolute;top:947px;left:712px;white-space:nowrap" class="ft18"><b>[31]</b></p>
+						<p style="position:absolute;top:947px;left:750px;white-space:nowrap" class="ft18"><span t-esc="'{0:,.2f}'.format(field_31)"/></p>
+						<p style="position:absolute;top:969px;left:85px;white-space:nowrap" class="ft18">c</p>
+						<p style="position:absolute;top:969px;left:110px;white-space:nowrap" class="ft18">
+							Hàng&#160;hoá,&#160;dịch&#160;vụ&#160;bán&#160;ra&#160;chịu&#160;thuế&#160;suất&#160;10%</p>
+						<p style="position:absolute;top:971px;left:561px;white-space:nowrap" class="ft17"><b>[32]</b></p>
+						<p style="position:absolute;top:971px;left:602px;white-space:nowrap" class="ft18"><span t-esc="'{0:,.2f}'.format(field_32)"/></p>
+						<p style="position:absolute;top:971px;left:712px;white-space:nowrap" class="ft18"><b>[33]</b></p>
+						<p style="position:absolute;top:971px;left:750px;white-space:nowrap" class="ft18"><span t-esc="'{0:,.2f}'.format(field_33)"/></p>
+						<p style="position:absolute;top:993px;left:84px;white-space:nowrap" class="ft18">d</p>
+						<p style="position:absolute;top:993px;left:110px;white-space:nowrap" class="ft18">
+							Hàng&#160;hoá,&#160;dịch&#160;vụ&#160;bán&#160;ra&#160;không&#160;tính&#160;thuế</p>
+						<p style="position:absolute;top:996px;left:558px;white-space:nowrap" class="ft17"><b>[32a]</b></p>
+						<p style="position:absolute;top:996px;left:602px;white-space:nowrap" class="ft18"><span t-esc="'{0:,.2f}'.format(field_32a)"/></p>
+						<p style="position:absolute;top:1028px;left:84px;white-space:nowrap" class="ft17"><b>3</b></p>
+						<p style="position:absolute;top:1017px;left:110px;white-space:nowrap" class="ft19">
+							Tổng&#160;doanh&#160;thu&#160;và&#160;thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;của&#160;hàng&#160;hóa,&#160;dịch&#160;vụ&#160;bán&#160;ra<br />([34]=[26]+[27];&#160;[35]=[28])
+						</p>
+						<p style="position:absolute;top:1028px;left:561px;white-space:nowrap" class="ft17"><b>[34]</b></p>
+						<p style="position:absolute;top:1028px;left:602px;white-space:nowrap" class="ft18"><span t-esc="'{0:,.2f}'.format(field_34)"/></p>
+						<p style="position:absolute;top:1028px;left:712px;white-space:nowrap" class="ft18"><b>[35]</b></p>
+						<p style="position:absolute;top:1028px;left:750px;white-space:nowrap" class="ft18"><span t-esc="'{0:,.2f}'.format(field_35)"/></p>
+						<p style="position:absolute;top:1058px;left:80px;white-space:nowrap" class="ft17">
+							<b>III&#160;</b>
+						</p>
+						<p style="position:absolute;top:1058px;left:110px;white-space:nowrap" class="ft17">
+							<b>Thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;phát&#160;sinh&#160;trong&#160;kỳ&#160;([36]=[35]-[25])</b>
+						</p>						
+						<p style="position:absolute;top:1058px;left:710px;white-space:nowrap" class="ft17"><b>[36]</b></p>
+						<p style="position:absolute;top:1058px;left:750px;white-space:nowrap" class="ft17"><b><span t-esc="'{0:,.2f}'.format(field_36)"/></b></p>
+						<p style="position:absolute;top:1083px;left:80px;white-space:nowrap" class="ft17">
+							<b>IV&#160;</b>
+						</p>
+						<p style="position:absolute;top:1083px;left:110px;white-space:nowrap" class="ft17">
+							Điều&#160;chỉnh&#160;tăng,&#160;giảm&#160;thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;còn&#160;được&#160;khấu&#160;trừ&#160;của&#160;các&#160;kỳ&#160;trước
+						</p>						
+						<p style="position:absolute;top:1110px;left:84px;white-space:nowrap" class="ft17"><b>1</b></p>
+						<p style="position:absolute;top:1107px;left:110px;white-space:nowrap" class="ft18">Điều&#160;chỉnh&#160;giảm</p>
+						<p style="position:absolute;top:1110px;left:710px;white-space:nowrap" class="ft17"><b>[37]</b></p>
+						<p style="position:absolute;top:1110px;left:840px;white-space:nowrap" class="ft18"><span t-esc="field_37"/></p>
+					</div>
+				
+					<div id="page2-div" style="position:relative;width:918px;height:1188px;">
+						<img width="918" height="1188" src="custom_accounting/static/src/img/target002.png" alt="background image" />
+						<p style="position:absolute;top:66px;left:84px;white-space:nowrap" class="ft20"><b>2</b></p>
+						<p style="position:absolute;top:63px;left:110px;white-space:nowrap" class="ft21">Điều&#160;chỉnh&#160;tăng</p>
+						<p style="position:absolute;top:66px;left:710px;white-space:nowrap" class="ft20"><b>[38]</b></p>
+						<p style="position:absolute;top:66px;left:840px;white-space:nowrap" class="ft21"><span t-esc="field_38"/></p>
+						<p style="position:absolute;top:87px;left:83px;white-space:nowrap" class="ft20"><b>V</b></p>
+						<p style="position:absolute;top:87px;left:110px;white-space:nowrap" class="ft20">
+							<b>Thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;nhận&#160;bàn&#160;giao&#160;được&#160;khấu&#160;trừ&#160;trong&#160;kỳ</b>
+						</p>
+						<p style="position:absolute;top:87px;left:706px;white-space:nowrap" class="ft20"><b>[39a]</b></p>
+						<p style="position:absolute;top:90px;left:840px;white-space:nowrap" class="ft21"><span t-esc="field_39a"/></p>
+						<p style="position:absolute;top:112px;left:80px;white-space:nowrap" class="ft20">
+							<b>VI&#160;</b>
+						</p>
+						<p style="position:absolute;top:112px;left:110px;white-space:nowrap" class="ft20">
+							Xác&#160;định&#160;nghĩa&#160;vụ&#160;thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;phải&#160;nộp&#160;trong&#160;kỳ:
+						</p>
+						<p style="position:absolute;top:147px;left:84px;white-space:nowrap" class="ft20"><b>1</b></p>
+						<p style="position:absolute;top:136px;left:110px;white-space:nowrap" class="ft27">
+							<b>Thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;phải&#160;nộp&#160;của&#160;hoạt&#160;động&#160;sản&#160;xuất&#160;kinh&#160;doanh&#160;trong&#160;kỳ<br />{[40a]=([36]-[22]+[37]-[38]-[39a])&#160;≥&#160;0}</b>
+						</p>
+						<p style="position:absolute;top:147px;left:706px;white-space:nowrap" class="ft20"><b>[40a]</b></p>
+						<p style="position:absolute;top:147px;left:750px;white-space:nowrap" class="ft21"><span t-esc="'{0:,.2f}'.format(field_40a)"/></p>
+						<p style="position:absolute;top:188px;left:84px;white-space:nowrap" class="ft20"><b>2</b></p>
+						<p style="position:absolute;top:177px;left:110px;white-space:nowrap" class="ft27">
+							<b>Thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;mua&#160;vào&#160;của&#160;dự&#160;án&#160;đầu&#160;tư&#160;được&#160;bù&#160;trừ&#160;với&#160;thuế&#160;GTGT&#160;còn&#160;phải&#160;nộp&#160;của&#160;<br />hoạt động&#160;sản&#160;xuất&#160;kinh&#160;doanh&#160;cùng&#160;kỳ&#160;tính&#160;thuế&#160;([40b]≤[40a])</b>
+						</p>
+						<p style="position:absolute;top:188px;left:706px;white-space:nowrap" class="ft20"><b>[40b]</b></p>
+						<p style="position:absolute;top:188px;left:750px;white-space:nowrap" class="ft21"><span t-esc="'{0:,.2f}'.format(field_40b)"/></p>
+						<p style="position:absolute;top:218px;left:84px;white-space:nowrap" class="ft20"><b>3</b></p>
+						<p style="position:absolute;top:218px;left:110px;white-space:nowrap" class="ft20">
+							<b>Thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;còn&#160;phải&#160;nộp&#160;trong&#160;kỳ&#160;([40]=[40a]-[40b])</b>
+						</p>
+						<p style="position:absolute;top:218px;left:710px;white-space:nowrap" class="ft20"><b>[40]</b></p>
+						<p style="position:absolute;top:218px;left:750px;white-space:nowrap" class="ft20"><b><span t-esc="'{0:,.2f}'.format(field_40)"/></b></p>
+						<p style="position:absolute;top:242px;left:84px;white-space:nowrap" class="ft20"><b>4</b></p>
+						<p style="position:absolute;top:242px;left:110px;white-space:nowrap" class="ft20">
+							<b>Thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;chưa&#160;khấu&#160;trừ&#160;hết&#160;kỳ&#160;này&#160;{[41]=([36]-[22]+[37]-[38]-[39a])&#160;≤&#160;0}</b>
+						</p>
+						<p style="position:absolute;top:242px;left:710px;white-space:nowrap" class="ft20"><b>[41]</b></p>
+						<p style="position:absolute;top:242px;left:750px;white-space:nowrap" class="ft20"><b><span t-esc="'{0:,.2f}'.format(field_41)"/></b></p>
+						<p style="position:absolute;top:267px;left:79px;white-space:nowrap" class="ft21">
+							4.1&#160;
+						</p>
+						<p style="position:absolute;top:267px;left:109px;white-space:nowrap" class="ft21">
+							Thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;đề&#160;nghị&#160;hoàn&#160;([42]&#160;≤&#160;[41])
+						</p>
+						<p style="position:absolute;top:269px;left:710px;white-space:nowrap" class="ft20"><b>[42]</b></p>
+						<p style="position:absolute;top:269px;left:840px;white-space:nowrap" class="ft21">0</p>
+						<p style="position:absolute;top:291px;left:79px;white-space:nowrap" class="ft21">
+							4.2&#160;
+						</p>
+						<p style="position:absolute;top:291px;left:109px;white-space:nowrap" class="ft21">
+							Thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;còn&#160;được&#160;khấu&#160;trừ&#160;chuyển&#160;kỳ&#160;sau&#160;([43]=[41]-[42])
+						</p>
+						<p style="position:absolute;top:294px;left:710px;white-space:nowrap" class="ft20"><b>[43]</b></p>
+						<p style="position:absolute;top:294px;left:840px;white-space:nowrap" class="ft21">0</p>
+						<p style="position:absolute;top:328px;left:70px;white-space:nowrap" class="ft22">
+							Tôi&#160;cam&#160;đoan&#160;số&#160;liệu&#160;khai&#160;trên&#160;là&#160;đúng&#160;và&#160;chịu&#160;trách&#160;nhiệm&#160;trước&#160;pháp&#160;luật&#160;về&#160;số&#160;liệu&#160;đã&#160;khai./.
+						</p>
+						<p style="position:absolute;top:377px;left:93px;white-space:nowrap" class="ft23">
+							<b>NHÂN&#160;VIÊN&#160;ĐẠI&#160;LÝ&#160;THUẾ</b>
+						</p>
+						<p style="position:absolute;top:373px;left:511px;white-space:nowrap" class="ft24">
+							<i>Tp.&#160;Hồ&#160;Chí&#160;Minh,&#160;ngày&#160;<span t-esc="date"/>&#160;tháng&#160;<span t-esc="month"/>&#160;năm&#160;<span t-esc="year"/></i>
+						</p>
+						<p style="position:absolute;top:391px;left:569px;white-space:nowrap" class="ft23">
+							<b>NGƯỜI&#160;NỘP&#160;THUẾ&#160;hoặc</b>
+						</p>
+						<p style="position:absolute;top:410px;left:487px;white-space:nowrap" class="ft23">
+							<b>ĐẠI&#160;DIỆN&#160;HỢP&#160;PHÁP&#160;CỦA&#160;NGƯỜI&#160;NỘP&#160;THUẾ</b>
+						</p>
+						<p style="position:absolute;top:429px;left:465px;white-space:nowrap" class="ft24">
+							<i>(Ký,&#160;ghi&#160;rõ&#160;họ&#160;tên;&#160;chức&#160;vụ&#160;và&#160;đóng&#160;dấu&#160;(nếu&#160;có)/Ký&#160;điện&#160;tử)</i>
+						</p>
+						<p style="position:absolute;top:403px;left:93px;white-space:nowrap" class="ft28">
+							Họ&#160;và&#160;tên:<br />Chứng&#160;chỉ&#160;hành&#160;nghề&#160;số:</p>
+						<p style="position:absolute;top:505px;left:605px;white-space:nowrap" class="ft22">Tôn&#160;Thất&#160;Duyến</p>
+						<p style="position:absolute;top:557px;left:113px;white-space:nowrap" class="ft29">
+							<b>NHÓM FULLSNACK, ĐẠI HỌC RMIT VIỆT NAM<br /></b>
+						</p>
+						<p style="position:absolute;top:560px;left:512px;white-space:nowrap" class="ft27">
+							<b><span t-esc="company_name"/><br /></b>540101086914851A0BD04108F5957467
+						</p>
+						<p style="position:absolute;top:626px;left:70px;white-space:nowrap" class="ft210">
+							<i><b>Ghi&#160;chú:<br /></b>1.&#160;Chỉ&#160;tiêu&#160;[01a]:&#160;Người&#160;nộp&#160;thuế&#160;lựa&#160;chọn&#160;một&#160;trong&#160;các&#160;hoạt&#160;động&#160;sau:</i>
+						</p>
+						<p style="position:absolute;top:659px;left:96px;white-space:nowrap" class="ft211">
+							<i>&#160;-&#160;Hoạt&#160;động&#160;sản&#160;xuất&#160;kinh&#160;doanh&#160;thông&#160;thường<br />&#160;-&#160;Hoạt&#160;động&#160;xổ&#160;số&#160;kiến&#160;thiết,&#160;xổ&#160;số&#160;điện&#160;toán<br />&#160;-&#160;Hoạt&#160;động&#160;thăm&#160;dò&#160;khai&#160;thác&#160;dầu&#160;khí<br />&#160;-&#160;Dự&#160;án&#160;đầu&#160;tư&#160;cơ&#160;sở&#160;hạ&#160;tầng,&#160;nhà&#160;để&#160;chuyển&#160;nhượng&#160;khác&#160;địa&#160;bàn&#160;tỉnh&#160;nơi&#160;đóng&#160;trụ&#160;sở&#160;chính<br />&#160;-&#160;Nhà&#160;máy&#160;sản&#160;xuất&#160;điện&#160;khác&#160;địa&#160;bàn&#160;tỉnh&#160;nơi&#160;đóng&#160;trụ&#160;sở&#160;chính.</i>
+						</p>
+						<p style="position:absolute;top:749px;left:70px;white-space:nowrap" class="ft211">
+							<i>2.&#160;Chỉ&#160;tiêu&#160;[09],&#160;[10],&#160;[11]:&#160;Khai&#160;thông&#160;tin&#160;của&#160;đơn&#160;vị&#160;phụ&#160;thuộc,&#160;địa&#160;điểm&#160;kinh&#160;doanh&#160;đóng&#160;tại&#160;địa&#160;phương&#160;khác&#160;tỉnh&#160;nơi&#160;đóng&#160;trụ&#160;sở<br />chính&#160;đối&#160;với&#160;các&#160;trường&#160;hợp&#160;quy&#160;định&#160;tại&#160;điểm&#160;b,&#160;c&#160;khoản&#160;1&#160;Điều&#160;11&#160;Nghị&#160;định&#160;số&#160;126/2020/NĐ-CP&#160;ngày&#160;19/10/2020&#160;của&#160;Chính<br />phủ.&#160;Trường&#160;hợp&#160;có&#160;nhiều&#160;đơn&#160;vị&#160;phụ&#160;thuộc,&#160;địa&#160;điểm&#160;kinh&#160;doanh&#160;đóng&#160;trên&#160;nhiều&#160;huyện&#160;do&#160;Cục&#160;Thuế&#160;quản&#160;lý&#160;thì&#160;chọn&#160;1&#160;đơn&#160;vị&#160;đại<br />diện&#160;để&#160;kê&#160;khai&#160;vào&#160;chỉ&#160;tiêu&#160;này.&#160;Trường&#160;hợp&#160;có&#160;nhiều&#160;đơn&#160;vị&#160;phụ&#160;thuộc,&#160;địa&#160;điểm&#160;kinh&#160;doanh&#160;đóng&#160;trên&#160;nhiều&#160;huyện&#160;do&#160;Chi&#160;cục&#160;Thuế<br />khu&#160;vực&#160;quản&#160;lý&#160;thì&#160;chọn&#160;1&#160;đơn&#160;vị&#160;đại&#160;diện&#160;cho&#160;huyện&#160;do&#160;Chi&#160;cục&#160;Thuế&#160;khu&#160;vực&#160;quản&#160;lý&#160;để&#160;kê&#160;khai&#160;vào&#160;chỉ&#160;tiêu&#160;này.<br />3.&#160;Chỉ&#160;tiêu&#160;[32a]:&#160;Khai&#160;giá&#160;trị&#160;hàng&#160;hóa,&#160;dịch&#160;vụ&#160;thuộc&#160;trường&#160;hợp&#160;không&#160;phải&#160;kê&#160;khai,&#160;tính&#160;nộp&#160;thuế&#160;giá&#160;trị&#160;gia&#160;tăng&#160;theo&#160;quy&#160;định<br />của&#160;pháp&#160;luật&#160;thuế&#160;giá&#160;trị&#160;gia&#160;tăng.&#160;4.&#160;Chỉ&#160;tiêu&#160;[37]&#160;và&#160;[38]:&#160;Khai&#160;theo&#160;số&#160;thuế&#160;được&#160;khấu&#160;trừ&#160;điều&#160;chỉnh&#160;tăng/giảm&#160;tại&#160;chỉ&#160;tiêu&#160;II<br />trên&#160;Tờ&#160;khai&#160;bổ&#160;sung.&#160;Riêng&#160;trường&#160;hợp&#160;cơ&#160;quan&#160;thuế,&#160;cơ&#160;quan&#160;có&#160;thẩm&#160;quyền&#160;đã&#160;ban&#160;hành&#160;kết&#160;luận,&#160;quyết&#160;định&#160;xử&#160;lý&#160;về&#160;thuế&#160;có&#160;điều<br />chỉnh&#160;tương&#160;ứng&#160;các&#160;kỳ&#160;tính&#160;thuế&#160;trước&#160;thì&#160;khai&#160;vào&#160;hồ&#160;sơ&#160;khai&#160;thuế&#160;của&#160;kỳ&#160;tính&#160;thuế&#160;nhận&#160;được&#160;kết&#160;luận,&#160;quyết&#160;định&#160;xử&#160;lý&#160;về&#160;thuế<br />(không&#160;phải&#160;khai&#160;bổ&#160;sung&#160;hồ&#160;sơ&#160;khai&#160;thuế).<br />5.&#160;Chỉ&#160;tiêu&#160;[39a]:&#160;Khai&#160;số&#160;thuế&#160;GTGT&#160;còn&#160;được&#160;khấu&#160;trừ&#160;chưa&#160;đề&#160;nghị&#160;hoàn&#160;của&#160;dự&#160;án&#160;đầu&#160;tư&#160;chuyển&#160;cho&#160;người&#160;nộp&#160;thuế&#160;tiếp&#160;tục<br />khấu&#160;trừ&#160;(là&#160;số&#160;thuế&#160;GTGT&#160;còn&#160;được&#160;khấu&#160;trừ,&#160;không&#160;đủ&#160;điều&#160;kiện&#160;hoàn,&#160;không&#160;hoàn&#160;mà&#160;người&#160;nộp&#160;thuế&#160;đã&#160;kê&#160;khai&#160;riêng&#160;tờ&#160;khai<br />thuế&#160;dự&#160;án&#160;đầu&#160;tư)&#160;khi&#160;dự&#160;án&#160;đầu&#160;tư&#160;đi&#160;vào&#160;hoạt&#160;động&#160;hoặc&#160;số&#160;thuế&#160;GTGT&#160;còn&#160;được&#160;khấu&#160;trừ&#160;chưa&#160;đề&#160;nghị&#160;hoàn&#160;của&#160;hoạt&#160;động&#160;sản<br />xuất&#160;kinh&#160;doanh&#160;của&#160;đơn&#160;vị&#160;phụ&#160;thuộc&#160;khi&#160;chấm&#160;dứt&#160;hoạt&#160;động,…<br />\6.&#160;Chỉ&#160;tiêu&#160;[40b]:&#160;Khai&#160;tổng&#160;số&#160;thuế&#160;đã&#160;khai&#160;tại&#160;chỉ&#160;tiêu&#160;[28a]&#160;và&#160;[28b]&#160;của&#160;các&#160;Tờ&#160;khai&#160;mẫu&#160;số&#160;02/GTGT./.</i>
+						</p>
+					</div>
+				</body>
+				</html>
+		</t>
+	</template>
+
+	<record id="action_custom_report_sale_order" model="ir.actions.report">
+		<field name="name">Sale Order Report</field>
+		<field name="model">custom.accounting.tax.report</field>
+		<field name="report_type">qweb-pdf</field>
+		<field name="report_name">custom_accounting.custom_report_sale_order</field>
+		<field name="report_file">custom_accounting.custom_report_sale_order</field>
+		<field name="binding_model_id" ref="model_custom_accounting_tax_report"/>
+		<field name="binding_type">report</field>
+	</record>
+</odoo>
